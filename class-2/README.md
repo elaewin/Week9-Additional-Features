@@ -10,7 +10,6 @@
 ###Reading Assignment:
 * Programming in Objective-C
   * **Chapter 13:** Underlying C Language Features: Blocks, Structures
-
 * Apple Documentation + Other
   * [CocoaPods](https://cocoapods.org/)
   * [Carthage](https://github.com/Carthage/Carthage)
