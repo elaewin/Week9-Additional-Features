@@ -10,7 +10,6 @@
 ###Reading Assignment:
 * Programming in Objective-C
   * **Chapter 13:** Underlying C Language Features : Arrays, Functions
-
 * Apple Documentation + Other
   * [Introduction to Container View Controllers](https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html)
   * [VIDEO: Session 102](https://developer.apple.com/videos/wwdc/2011/?id=102T) - Optional
