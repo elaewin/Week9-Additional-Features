@@ -19,5 +19,5 @@
 * [Reading Assignments](../../Resources/ra-grading-standard/)
 * [Grading Rubrics](../../Resources/)
 * [Lecture Resources](lecture/)
-* [Lecture Slides](https://www.icloud.com/keynote/000aZmpSznOit-MKVG2qWwAVw#Week9-Class2)
+* [Lecture Slides](https://www.icloud.com/keynote/0005bZ5p2V9hNHM9kWaMEr8mA#Week9_Day2)
 * Documentation for `/users` endpoint: [http://api.stackexchange.com/docs/users](http://api.stackexchange.com/docs/users)
