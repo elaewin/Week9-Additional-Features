@@ -1,10 +1,20 @@
 #Week 9 - Class 2
+##Homework
 * Use CocoaPods to get AFNetworking installed in your app
 * Use AFNetworking to make all HTTP requests instead of directly using NSURLSession or NSURLConnection from Apple
   * Implement tableView's on both the QuestionSearchViewController and UserSearchViewController.
 * implement 2 GET requests to search for questions and users with searchTerm.
   * Add a searchBar to each viewController's tableView.
   * Searches should display results in the tableView.
+
+###Reading Assignment:
+* Programming in Objective-C
+  * **Chapter 13:** Underlying C Language Features: Blocks, Structures
+
+* Apple Documentation + Other
+  * [CocoaPods](https://cocoapods.org/)
+  * [Carthage](https://github.com/Carthage/Carthage)
+  * [Introduction to GCD](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/)
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)

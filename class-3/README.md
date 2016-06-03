@@ -1,10 +1,11 @@
 #Week 9 - Class 3
-* Implement KVO somewhere in your project.
-* Convert one of your TableViewCells to a Nib to use in your TableView
-  * Question Nib should have title, owner's name, and isAnswered label.
-* **Bonus:**
-  * Using Dispatch groups, show an alert view once all images have been downloaded (The downloads should be waterfall style, not lazy!).
-  * Using the endpoint `/me`, do another fetch, add a 3rd ViewController to the containerViewController, and display the logged in users's data.
+##Homework
+
+* Today dedicated to group projects - head start.
+
+###Reading Assignment
+* Programming in Objective-C
+  * **Chapter 13:** Underlying C Language Features: Pointers, Misc Lang Features, How Things Work
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)
