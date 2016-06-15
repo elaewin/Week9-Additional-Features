@@ -10,10 +10,7 @@
 ###Reading Assignment:
 * Programming in Objective-C
   * **Chapter 13:** Underlying C Language Features: Blocks, Structures
-* Apple Documentation + Other
-  * [CocoaPods](https://cocoapods.org/)
-  * [Carthage](https://github.com/Carthage/Carthage)
-  * [Introduction to GCD](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/)
+
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)

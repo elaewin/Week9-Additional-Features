@@ -10,12 +10,10 @@
 ###Reading Assignment:
 * Programming in Objective-C
   * **Chapter 13:** Underlying C Language Features : Arrays, Functions
-* Apple Documentation
-  * [Introduction to Container View Controllers](https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html)
-  * [VIDEO: Session 102](https://developer.apple.com/videos/wwdc/2011/?id=102T) - Optional
-* Other:
-  * [OAuth2 Overview](http://tutorials.jenkov.com/oauth2/index.html)
-  * [NSError - NSHipster](http://nshipster.com/nserror/)
+* Apple Documentation + Other
+  * [CocoaPods](https://cocoapods.org/)
+  * [Carthage](https://github.com/Carthage/Carthage)
+  * [Introduction to GCD](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/)
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)
