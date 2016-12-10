@@ -1,7 +1,8 @@
 #Week 9 - Class 1
 ##Homework
 * Open your choice of one of your previous Objective-C projects.  
-* Create a new branch for today's lab called `week9-class1-lab`.  
+* Create a new branch for today's lab called `week9-class1-lab`. 
+	* This will be the branch you use for your lab submission.
 * In this project, on your new branch, implement the following:  
 	* Create a right burger menu. Setup both a burger button and slide recognizer.
 	* Create your own custom NSError domain and error codes.
