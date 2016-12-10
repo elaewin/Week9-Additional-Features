@@ -4,7 +4,7 @@
 * Create a new branch for today's lab called `week9-class1-lab`. 
 	* This will be the branch you use for your lab submission.
 * In this project, on your new branch, implement the following:  
-	* Create a right burger menu. Setup both a burger button and slide recognizer.
+	* Create a right burger menu. Setup both a burger button and panGestureRecognizer.
 	* Create your own custom NSError domain and error codes.
 * ??Using WKWebView, implement the OAuth workflow to get an auth token from StackOverflow API
 
