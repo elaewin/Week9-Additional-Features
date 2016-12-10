@@ -1,11 +1,11 @@
 #Week 9 - Class 1
 ##Homework
-* Create your burger menu via a custom container controller. Setup both a burger button and slide recognizer.
-* Create your QuestionSearchViewController and UserSearchViewController
-	* Implementation can stay empty for today.
-* Using WKWebView, implement the OAuth workflow to get an auth token from StackOverflow API
-* Create your own custom NSError domain and error codes.
-* Implement KeyedArchiver to save the access_token securely instead of NSUserDefaults.
+* Open your choice of one of your previous Objective-C projects.  
+* Create a new branch for today's lab called `week9-class1-lab`.  
+* In this project, on your new branch, implement the following:  
+	* Create a right burger menu. Setup both a burger button and slide recognizer.
+	* Create your own custom NSError domain and error codes.
+* ??Using WKWebView, implement the OAuth workflow to get an auth token from StackOverflow API
 
 ###Reading Assignment:
 * Programming in Objective-C
