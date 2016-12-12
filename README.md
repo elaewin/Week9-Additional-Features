@@ -1,7 +1,7 @@
-#Week 9: StackOverflow Client
+#Week 9: Additional Features
 
 ##Overview:
-> We will create a StackOverflow Client.
+> We will cover additional concepts and build them out in existing applications.
 
 ##Daily Breakdown
   * [Class 1:](class-1/) Container View Controllers, OAuth & WebViews, NSError
