@@ -42,9 +42,26 @@ NSTimeInterval kAnimationSlideMenuClosedTime = 0.15; // how long to close menu
     
     UITableViewController *menuTableController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuTable"];
     
+    [self setupChildController:menuTableController];
+    [self setupChildController:firstVC];
+    
     menuTableController.tableView.delegate = self;
     
     [self setupBurgerButton];
+    [self setupPanGesture];
+    
+}
+
+// MARK: Setup Methods
+
+-(void)setupChildController:(UIViewController *)childVC {
+    [self addChildViewController:childVC];
+    
+    childVC.view.frame = self.view.frame;
+    
+    [self.view addSubview:childVC.view];
+    
+    [childVC didMoveToParentViewController:self];
 }
 
 -(void)setupBurgerButton {
@@ -60,6 +77,14 @@ NSTimeInterval kAnimationSlideMenuClosedTime = 0.15; // how long to close menu
     
     self.burgerButton = button;
 }
+
+
+-(void)setupPanGesture {
+    self.panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(topViewControllerPanned:)];
+    [self.topViewController.view addGestureRecognizer:self.panGesture];
+}
+
+// MARK: Actions
 
 -(void)burgerButtonPressed:(UIButton *)sender {
     
@@ -97,10 +122,94 @@ NSTimeInterval kAnimationSlideMenuClosedTime = 0.15; // how long to close menu
     }];
 }
 
+-(void)topViewControllerPanned:(UIPanGestureRecognizer *)sender {
+    CGPoint velocity = [sender velocityInView:self.topViewController.view];
+    CGPoint translation = [sender translationInView:self.topViewController.view];
+    
+//    NSLog(@"Velocity: %f", velocity.x);
+//    NSLog(@"Translation: %f", translation.x);
+    
+    if (sender.state == UIGestureRecognizerStateChanged) {
+        if (translation.x >= 0) {
+            self.topViewController.view.center = CGPointMake(self.topViewController.view.center.x + translation.x, self.view.center.y);
+            
+            [sender setTranslation:CGPointZero inView:self.topViewController.view];
+        }
+    }
+    
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        __weak typeof(self) bruce = self;
+        
+        if (self.topViewController.view.frame.origin.x > (self.view.frame.size.width * kBurgerOpenScreenThreshold)) {
+            
+            
+            [UIView animateWithDuration:kAnimationSlideMenuOpenTime animations:^{
+                __strong typeof(bruce) hulk = bruce;
+                
+                hulk.topViewController.view.center = CGPointMake(hulk.view.center.x / kBurgerMenuWidth, hulk.view.center.y);
+                
+            } completion:^(BOOL finished) {
+                __strong typeof(bruce) hulk = bruce;
+
+                UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:hulk action:@selector(tapToCloseMenu:)];
+                
+                [hulk.topViewController.view addGestureRecognizer:tapGesture];
+                
+                hulk.burgerButton.userInteractionEnabled = NO;
+            }];
+        } else {
+            
+            [UIView animateWithDuration:kAnimationSlideMenuOpenTime animations:^{
+                __strong typeof(bruce) hulk = bruce;
+                
+                hulk.topViewController.view.center = hulk.view.center;
+
+            }];
+        }
+    }
+}
+
 // MARK: UITableViewDelegate Methods
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // come back to this.
+    
+    UIViewController *newTopVC = self.viewControllers[indexPath.row];
+    
+    __weak typeof(self) bruce = self;
+    
+    [UIView animateWithDuration:kAnimationSlideMenuOpenTime animations:^{
+        __strong typeof(bruce) hulk = bruce;
+        
+        hulk.topViewController.view.frame = CGRectMake(hulk.view.frame.size.width, hulk.view.frame.origin.y, hulk.view.frame.size.width, hulk.view.frame.size.height);
+
+    } completion:^(BOOL finished) {
+        __strong typeof(bruce) hulk = bruce;
+
+        CGRect oldFrame = hulk.topViewController.view.frame;
+        
+        [hulk.topViewController willMoveToParentViewController:nil];
+        [hulk.topViewController.view removeFromSuperview];
+        [hulk.topViewController removeFromParentViewController];
+        
+        [hulk setupChildController:newTopVC];
+        newTopVC.view.frame = oldFrame;
+        
+        hulk.topViewController = newTopVC;
+        
+        [hulk.burgerButton removeFromSuperview];
+        [hulk.topViewController.view addSubview:hulk.burgerButton];
+        
+        [UIView animateWithDuration:kAnimationSlideMenuClosedTime animations:^{
+            hulk.topViewController.view.frame = hulk.view.frame;
+            
+        } completion:^(BOOL finished) {
+            [hulk.topViewController.view addGestureRecognizer:hulk.panGesture];
+            hulk.burgerButton.userInteractionEnabled = YES;
+        }];
+        
+        
+    }];
+    
 }
 
 
