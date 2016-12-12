@@ -6,7 +6,8 @@
 * In this project, on your new branch, implement the following:  
 	* Create a right burger menu. Setup both a burger button and panGestureRecognizer.
 	* Create your own custom NSError domain and error codes.
-* ??Using WKWebView, implement the OAuth workflow to get an auth token from StackOverflow API
+* **Bonus**
+	* Refactor a previos project to use WKWebView to implement the OAuth workflow with an existing API.
 
 ###Reading Assignment:
 * Programming in Objective-C
