@@ -70,7 +70,30 @@ NSTimeInterval kAnimationSlideMenuClosedTime = 0.15; // how long to close menu
         hulk.topViewController.view.center = CGPointMake(hulk.view.center.x / kBurgerMenuWidth, hulk.view.center.y);
         
     } completion:^(BOOL finished) {
+        __strong typeof(bruce) hulk = bruce;
         
+        UITapGestureRecognizer *tapToClose = [[UITapGestureRecognizer alloc]initWithTarget:hulk action:@selector(tapToCloseMenu:)];
+        
+        [hulk.topViewController.view addGestureRecognizer:tapToClose];
+        
+        sender.userInteractionEnabled = NO;
+        
+    }];
+}
+
+-(void)tapToCloseMenu:(UITapGestureRecognizer *)sender {
+    [self.topViewController.view removeGestureRecognizer:sender];
+    
+    __weak typeof(self) bruce = self;
+    [UIView animateWithDuration:kAnimationSlideMenuOpenTime animations:^{
+        __strong typeof(bruce) hulk = bruce;
+        
+        hulk.topViewController.view.center = hulk.view.center;
+        
+    } completion:^(BOOL finished) {
+        __strong typeof(bruce) hulk = bruce;
+        
+        hulk.burgerButton.userInteractionEnabled = YES;
     }];
 }
 
