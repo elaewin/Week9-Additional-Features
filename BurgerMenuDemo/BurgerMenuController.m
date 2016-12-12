@@ -9,7 +9,7 @@
 #import "BurgerMenuController.h"
 
 CGFloat kBurgerOpenScreenThreshold = 0.33; // percentage of view; value of 0.0 to 1.0
-CGFloat kBurgerOpenScreenWidth = 0.5; // percentage of view; value of 0.0 to 1.0
+CGFloat kBurgerMenuWidth = 0.5; // percentage of view; value of 0.0 to 1.0
 
 CGFloat kBurgerImageWidth = 50.0; // width of burger button
 CGFloat kBurgerImageHeight = 50.0; // height of burger button
@@ -43,7 +43,35 @@ NSTimeInterval kAnimationSlideMenuClosedTime = 0.15; // how long to close menu
     UITableViewController *menuTableController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuTable"];
     
     menuTableController.tableView.delegate = self;
+    
+    [self setupBurgerButton];
+}
 
+-(void)setupBurgerButton {
+    
+    CGFloat padding = 20.0;
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(padding, padding, kBurgerImageWidth, kBurgerImageHeight)];
+    
+    [button setImage:[UIImage imageNamed:@"burger"] forState:UIControlStateNormal];
+    
+    [self.topViewController.view addSubview:button];
+    
+    [button addTarget:self action:@selector(burgerButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.burgerButton = button;
+}
+
+-(void)burgerButtonPressed:(UIButton *)sender {
+    
+    __weak typeof(self) bruce = self;
+    [UIView animateWithDuration:kAnimationSlideMenuOpenTime animations:^{
+        
+        __strong typeof(bruce) hulk = bruce;
+        hulk.topViewController.view.center = CGPointMake(hulk.view.center.x / kBurgerMenuWidth, hulk.view.center.y);
+        
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 // MARK: UITableViewDelegate Methods
