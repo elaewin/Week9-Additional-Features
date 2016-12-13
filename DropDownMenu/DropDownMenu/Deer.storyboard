@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="gAJ-tx-D3c">
             <objects>
-                <viewController id="DOm-Ho-ldb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeerViewController" id="DOm-Ho-ldb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ALY-Zh-f9T"/>
                         <viewControllerLayoutGuide type="bottom" id="sHB-U7-EE6"/>

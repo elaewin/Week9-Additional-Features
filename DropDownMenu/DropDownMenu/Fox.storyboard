@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="HpI-Qj-ohf">
             <objects>
-                <viewController id="vYH-Ys-EaS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoxViewController" id="vYH-Ys-EaS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQU-rw-KmX"/>
                         <viewControllerLayoutGuide type="bottom" id="3VE-8P-L0x"/>

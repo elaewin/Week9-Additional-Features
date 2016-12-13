@@ -105,11 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				55CCE5351DFF5D6700A3B61C /* Main.storyboard */,
-				55CCE5531DFF805500A3B61C /* Tiger.storyboard */,
+				55CCE5591DFF814F00A3B61C /* Deer.storyboard */,
 				55CCE5551DFF80E300A3B61C /* Fox.storyboard */,
 				55CCE5571DFF812000A3B61C /* Raccoon.storyboard */,
-				55CCE5591DFF814F00A3B61C /* Deer.storyboard */,
 				55CCE55B1DFF818600A3B61C /* Snek.storyboard */,
+				55CCE5531DFF805500A3B61C /* Tiger.storyboard */,
 				55CCE53A1DFF5D6700A3B61C /* LaunchScreen.storyboard */,
 			);
 			name = View;

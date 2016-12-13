@@ -54,12 +54,18 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
     }];
 }
 
-
-- (IBAction)burgerButtonPressed:(id)sender {
+- (IBAction)burgerButtonPressed:(UIButton *)sender {
     NSLog(@"Burger pressed");
-    [self toggleMenuItems];
+    for (UIButton *button in self.menuItems) {
+        if (button.hidden) {
+            [button setHidden:NO];
+        } else {
+            [button setHidden:YES];
+        }
+    }
     // show all of the other buttons here.
 }
+
 
 - (IBAction)deerButtonPressed:(id)sender {
     // open deerVC
