@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HpI-Qj-ohf">
+            <objects>
+                <viewController storyboardIdentifier="FoxViewController" id="vYH-Ys-EaS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQU-rw-KmX"/>
+                        <viewControllerLayoutGuide type="bottom" id="3VE-8P-L0x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ac-VT-eix">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linnea-sandbakk" translatesAutoresizingMaskIntoConstraints="NO" id="pbu-5K-pSI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pbu-5K-pSI" firstAttribute="centerY" secondItem="1Ac-VT-eix" secondAttribute="centerY" id="7HV-hD-8dZ"/>
+                            <constraint firstItem="pbu-5K-pSI" firstAttribute="centerX" secondItem="1Ac-VT-eix" secondAttribute="centerX" id="ChC-K0-7Aq"/>
+                            <constraint firstItem="pbu-5K-pSI" firstAttribute="width" secondItem="1Ac-VT-eix" secondAttribute="width" id="Fck-b1-mKo"/>
+                            <constraint firstItem="pbu-5K-pSI" firstAttribute="height" secondItem="1Ac-VT-eix" secondAttribute="height" id="Qtg-Se-R2C"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSI-fO-ap8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="linnea-sandbakk" width="2265" height="3398"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ZKn-VW-WW9">
+            <objects>
+                <viewController storyboardIdentifier="SnekViewController" id="TMJ-uB-Snn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQd-Zr-FpO"/>
+                        <viewControllerLayoutGuide type="bottom" id="6vh-e1-LTg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Mn-wa-45n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alfonso-castro" translatesAutoresizingMaskIntoConstraints="NO" id="rJC-8X-tWD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rJC-8X-tWD" firstAttribute="centerY" secondItem="5Mn-wa-45n" secondAttribute="centerY" id="8ko-Nw-Zue"/>
+                            <constraint firstItem="rJC-8X-tWD" firstAttribute="height" secondItem="5Mn-wa-45n" secondAttribute="height" id="FQk-bz-JAJ"/>
+                            <constraint firstItem="rJC-8X-tWD" firstAttribute="centerX" secondItem="5Mn-wa-45n" secondAttribute="centerX" id="He8-Px-3fO"/>
+                            <constraint firstItem="rJC-8X-tWD" firstAttribute="width" secondItem="5Mn-wa-45n" secondAttribute="width" id="pl3-5z-gdl"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NI2-nH-Wie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alfonso-castro" width="3825" height="5737"/>
+    </resources>
+</document>
