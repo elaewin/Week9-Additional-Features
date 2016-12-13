@@ -48,7 +48,7 @@
                                                     <constraint firstAttribute="height" constant="85" id="8zR-nL-Rpk"/>
                                                     <constraint firstAttribute="width" constant="85" id="iKO-oA-ExU"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="burger"/>
+                                                <state key="normal" image="burger"/>
                                                 <connections>
                                                     <action selector="burgerButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="uZJ-jE-hdc"/>
                                                 </connections>
@@ -70,7 +70,7 @@
                                                     <constraint firstAttribute="height" constant="85" id="j6P-ew-KPx"/>
                                                     <constraint firstAttribute="width" constant="85" id="mbj-tW-ux5"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="deer"/>
+                                                <state key="normal" image="deer"/>
                                                 <connections>
                                                     <action selector="deerButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="PCO-oD-ERW"/>
                                                 </connections>
@@ -91,7 +91,7 @@
                                                     <constraint firstAttribute="height" constant="85" id="UPe-bm-krf"/>
                                                     <constraint firstAttribute="width" constant="85" id="jYw-q5-gaU"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="fox"/>
+                                                <state key="normal" image="fox"/>
                                                 <connections>
                                                     <action selector="foxButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="9GJ-rH-VcH"/>
                                                 </connections>
@@ -112,7 +112,7 @@
                                                     <constraint firstAttribute="width" constant="85" id="WYe-Mv-wFT"/>
                                                     <constraint firstAttribute="height" constant="85" id="kIH-g0-6To"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="racoon"/>
+                                                <state key="normal" image="racoon"/>
                                                 <connections>
                                                     <action selector="raccoonButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="KKH-as-BDV"/>
                                                 </connections>
@@ -133,7 +133,7 @@
                                                     <constraint firstAttribute="width" constant="85" id="1Js-eo-8ap"/>
                                                     <constraint firstAttribute="height" constant="85" id="dW2-rd-fvh"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="snek"/>
+                                                <state key="normal" image="snek"/>
                                                 <connections>
                                                     <action selector="snekButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="ljR-c0-blE"/>
                                                 </connections>
@@ -154,7 +154,7 @@
                                                     <constraint firstAttribute="width" constant="85" id="7C1-Xk-SHk"/>
                                                     <constraint firstAttribute="height" constant="85" id="Rgu-FQ-HYx"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="tiger"/>
+                                                <state key="normal" image="tiger"/>
                                                 <connections>
                                                     <action selector="tigerButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="Caa-Av-GlF"/>
                                                 </connections>
