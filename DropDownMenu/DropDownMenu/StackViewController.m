@@ -14,7 +14,6 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *stackViews;
 
-
 @property (weak, nonatomic) IBOutlet UIButton *burgerButton;
 
 @end
@@ -26,10 +25,10 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
     
     UIStackView *menuStack = [[UIStackView alloc]initWithArrangedSubviews:_stackViews];
     
-    for (UIView *stackItem in _stackViews) {
-        NSLog(@"Menu Item Present.");
-        [stackItem setHidden:NO];
-    }
+//    for (UIView *stackItem in _stackViews) {
+//        NSLog(@"Menu Item Present.");
+//        [stackItem setHidden:NO];
+//    }
 
     // Do any additional setup after loading the view.
 }
@@ -52,9 +51,9 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
             }
         }
 
-//    } completion:^(BOOL finished) {
-//        __strong typeof(bruce) hulk = bruce;
-//
+    } completion:^(BOOL finished) {
+        __strong typeof(bruce) hulk = bruce;
+        // do something here...
     }];
 }
 

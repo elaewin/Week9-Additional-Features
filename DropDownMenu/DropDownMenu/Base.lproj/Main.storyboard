@@ -168,6 +168,20 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gmj-QM-BLW" firstAttribute="leading" secondItem="bUm-UF-PSX" secondAttribute="leading" id="2Hj-iV-9H0"/>
+                                    <constraint firstAttribute="trailing" secondItem="75z-9p-fkH" secondAttribute="trailing" id="2Ts-Og-nFU"/>
+                                    <constraint firstItem="QxZ-pC-DMY" firstAttribute="leading" secondItem="bUm-UF-PSX" secondAttribute="leading" id="Drf-zN-Rbf"/>
+                                    <constraint firstItem="CCG-TV-q2b" firstAttribute="leading" secondItem="bUm-UF-PSX" secondAttribute="leading" id="FaX-PB-wH6"/>
+                                    <constraint firstItem="75z-9p-fkH" firstAttribute="leading" secondItem="bUm-UF-PSX" secondAttribute="leading" id="Krx-3c-8H5"/>
+                                    <constraint firstAttribute="trailing" secondItem="QxZ-pC-DMY" secondAttribute="trailing" id="QnH-dd-knC"/>
+                                    <constraint firstAttribute="trailing" secondItem="dSh-Bd-zTX" secondAttribute="trailing" id="SWE-QF-r9L"/>
+                                    <constraint firstAttribute="trailing" secondItem="NRc-hh-Ojy" secondAttribute="trailing" id="SyN-My-SZa"/>
+                                    <constraint firstAttribute="trailing" secondItem="CCG-TV-q2b" secondAttribute="trailing" id="TTr-9r-Iyy"/>
+                                    <constraint firstItem="dSh-Bd-zTX" firstAttribute="leading" secondItem="bUm-UF-PSX" secondAttribute="leading" id="V8d-a7-WSr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gmj-QM-BLW" secondAttribute="trailing" id="i1r-rJ-57C"/>
+                                    <constraint firstItem="NRc-hh-Ojy" firstAttribute="leading" secondItem="bUm-UF-PSX" secondAttribute="leading" id="jOE-gP-Hp3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,11 +193,11 @@
                     </view>
                     <connections>
                         <outlet property="burgerButton" destination="1hR-gI-O2I" id="d9p-E5-Dpx"/>
-                        <outletCollection property="stackView" destination="Gmj-QM-BLW" id="xs5-0a-LY5"/>
-                        <outletCollection property="stackView" destination="75z-9p-fkH" id="0Kf-0A-VP2"/>
-                        <outletCollection property="stackView" destination="dSh-Bd-zTX" id="XWC-8K-jfT"/>
-                        <outletCollection property="stackView" destination="QxZ-pC-DMY" id="jcZ-Gt-me3"/>
-                        <outletCollection property="stackView" destination="NRc-hh-Ojy" id="k7f-lk-kdQ"/>
+                        <outletCollection property="stackViews" destination="G0G-QU-mhU" id="1YW-Q5-5wL"/>
+                        <outletCollection property="stackViews" destination="53O-az-ilv" id="YXd-La-i7r"/>
+                        <outletCollection property="stackViews" destination="K2d-tG-r5c" id="joJ-5e-rLI"/>
+                        <outletCollection property="stackViews" destination="N6c-mM-D6P" id="I4D-OE-eDi"/>
+                        <outletCollection property="stackViews" destination="0aB-r7-RbL" id="flF-lf-qRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hl3-AB-4HU" userLabel="First Responder" sceneMemberID="firstResponder"/>
