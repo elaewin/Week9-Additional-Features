@@ -32,15 +32,22 @@ CGFloat kStackVCWidthMultiplier = 0.3; // percentage of view; value of 0.0 to 1.
 }
 
 -(void)setupViewControllers {
-    UIViewController *deerVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DeerViewController"];
     
-    UIViewController *foxVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FoxViewController"];
+    UIStoryboard *deerSB = [UIStoryboard storyboardWithName:@"Deer" bundle:nil];
+    UIStoryboard *foxSB = [UIStoryboard storyboardWithName:@"Fox" bundle:nil];
+    UIStoryboard *raccoonSB = [UIStoryboard storyboardWithName:@"Raccoon" bundle:nil];
+    UIStoryboard *snekSB = [UIStoryboard storyboardWithName:@"Snek" bundle:nil];
+    UIStoryboard *tigerSB = [UIStoryboard storyboardWithName:@"Tiger" bundle:nil];
     
-    UIViewController *raccoonVC = [self.storyboard instantiateViewControllerWithIdentifier:@"RaccoonViewController"];
+    UIViewController *deerVC = [deerSB instantiateViewControllerWithIdentifier:@"DeerViewController"];
     
-    UIViewController *snekVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SnekViewController"];
+    UIViewController *foxVC = [foxSB instantiateViewControllerWithIdentifier:@"FoxViewController"];
     
-    UIViewController *tigerVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TigerViewController"];
+    UIViewController *raccoonVC = [raccoonSB instantiateViewControllerWithIdentifier:@"RaccoonViewController"];
+    
+    UIViewController *snekVC = [snekSB instantiateViewControllerWithIdentifier:@"SnekViewController"];
+    
+    UIViewController *tigerVC = [tigerSB instantiateViewControllerWithIdentifier:@"TigerViewController"];
     
     self.viewControllers = @[deerVC, foxVC, raccoonVC, snekVC, tigerVC];
 }
