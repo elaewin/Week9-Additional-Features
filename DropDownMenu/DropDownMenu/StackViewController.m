@@ -11,8 +11,11 @@
 NSTimeInterval kMenuShowHideItemsDuration = 0.3;
 
 @interface StackViewController ()
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *menuItems;
-// create outlet for burger button!
+
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *stackViews;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *burgerButton;
 
 @end
 
@@ -21,10 +24,11 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIStackView *menuStack = [[UIStackView alloc]initWithArrangedSubviews:_menuItems];
+    UIStackView *menuStack = [[UIStackView alloc]initWithArrangedSubviews:_stackViews];
     
-    for (UIButton *button in _menuItems) {
-        [button setHidden:YES];
+    for (UIView *stackItem in _stackViews) {
+        NSLog(@"Menu Item Present.");
+        [stackItem setHidden:NO];
     }
 
     // Do any additional setup after loading the view.
@@ -36,15 +40,15 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
     [UIStackView animateWithDuration:kMenuShowHideItemsDuration animations:^{
         __strong typeof(bruce) hulk = bruce;
         
-//        for (UIButton *button in hulk.menuItems) {
-//            button.hidden = !button.hidden;
+//        for (UIView *stackItem in hulk.stackViews) {
+//            stackItem.hidden = !stackItem.hidden;
 //        }
         
-        for (UIButton *button in hulk.menuItems) {
-            if (button.hidden) {
-                [button setHidden:NO];
+        for (UIView *stackItem in hulk.stackViews) {
+            if (stackItem.hidden) {
+                [stackItem setHidden:NO];
             } else {
-                [button setHidden:YES];
+                [stackItem setHidden:YES];
             }
         }
 
@@ -56,11 +60,11 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
 
 - (IBAction)burgerButtonPressed:(UIButton *)sender {
     NSLog(@"Burger pressed");
-    for (UIButton *button in self.menuItems) {
-        if (button.hidden) {
-            [button setHidden:NO];
+    for (UIView *stackItem in self.stackViews) {
+        if (stackItem.hidden) {
+            [stackItem setHidden:NO];
         } else {
-            [button setHidden:YES];
+            [stackItem setHidden:YES];
         }
     }
     // show all of the other buttons here.

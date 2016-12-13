@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="xTg-D8-bQ7">
             <objects>
-                <viewController id="hjp-PQ-dLa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RaccoonViewController" id="hjp-PQ-dLa" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ESf-Db-Rrp"/>
                         <viewControllerLayoutGuide type="bottom" id="4XI-m9-ZNg"/>

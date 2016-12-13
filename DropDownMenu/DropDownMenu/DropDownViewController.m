@@ -26,7 +26,7 @@ CGFloat kStackVCWidthMultiplier = 0.3; // percentage of view; value of 0.0 to 1.
     
     self.topViewController = self.viewControllers.firstObject;
     
-    
+    [self setupStackMenu];
     
 
 }
@@ -69,12 +69,16 @@ CGFloat kStackVCWidthMultiplier = 0.3; // percentage of view; value of 0.0 to 1.
     
     CGFloat leftMargin = self.view.frame.size.width - stackWidth;
     
-    stackVC.view.frame = CGRectMake(leftMargin, 0.0, stackWidth, self.view.frame.size.height);
-    
-    [self setupChildController:stackVC];
-    
     self.stackViewController = stackVC;
     
+    [self addChildViewController:stackVC];
+    
+    stackVC.view.frame = self.view.frame;
+//    CGRectMake(0.0, 0.0, stackWidth, self.view.frame.size.height);
+    
+    [self.view addSubview:stackVC.view];
+    
+    [stackVC didMoveToParentViewController:self];
     
 }
 
