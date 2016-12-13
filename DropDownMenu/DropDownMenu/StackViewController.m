@@ -23,6 +23,8 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor clearColor];
+    
     UIStackView *menuStack = [[UIStackView alloc]initWithArrangedSubviews:_stackViews];
     
 //    for (UIView *stackItem in _stackViews) {
