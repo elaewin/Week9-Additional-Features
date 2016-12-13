@@ -1,11 +1,13 @@
 #Week 9 - Class 2
 ##Homework
-* Use CocoaPods to get AFNetworking installed in your app
-* Use AFNetworking to make all HTTP requests instead of directly using NSURLSession or NSURLConnection from Apple
-  * Implement tableView's on both the QuestionSearchViewController and UserSearchViewController.
-* implement 2 GET requests to search for questions and users with searchTerm.
-  * Add a searchBar to each viewController's tableView.
-  * Searches should display results in the tableView.
+* create a `week-9-lab-2` branch on one of your previous OBJECTIVE-C projects to submit your assignment from.
+    * on this branch, implement 5 of your own custom errors with your own error domain.
+    * demonstrate using GCD in your application anywhere we were using NSOperationQueue.
+* prepare a 3-7 minute project pitch to present your idea for project week. this should include the following:
+    * overview of project idea
+    * Who is your target user?
+    * what are your key features needed for mvp?
+    * what backend service will u be using?
 
 ###Reading Assignment:
 * Programming in Objective-C
