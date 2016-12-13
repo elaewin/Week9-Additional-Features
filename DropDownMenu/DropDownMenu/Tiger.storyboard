@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Gwt-zA-tZa">
+            <objects>
+                <viewController storyboardIdentifier="TigerViewController" id="mGd-u9-Rbd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2pv-Ia-CXx"/>
+                        <viewControllerLayoutGuide type="bottom" id="xPH-6Q-61b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="04K-gI-2hx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laiyuhsiang" translatesAutoresizingMaskIntoConstraints="NO" id="CCB-Ra-c9r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CCB-Ra-c9r" firstAttribute="centerY" secondItem="04K-gI-2hx" secondAttribute="centerY" id="JK4-Yx-Sob"/>
+                            <constraint firstItem="CCB-Ra-c9r" firstAttribute="centerX" secondItem="04K-gI-2hx" secondAttribute="centerX" id="M99-qn-mcI"/>
+                            <constraint firstItem="CCB-Ra-c9r" firstAttribute="width" secondItem="04K-gI-2hx" secondAttribute="width" id="iFT-fZ-V7d"/>
+                            <constraint firstItem="CCB-Ra-c9r" firstAttribute="height" secondItem="04K-gI-2hx" secondAttribute="height" id="ubT-QG-rqR"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ph4-ga-d1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="laiyuhsiang" width="2832" height="4256"/>
+    </resources>
+</document>
