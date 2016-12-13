@@ -1,6 +1,6 @@
 #Week 9 - Class 2
 ##Homework
-* create a 'week-9-lab-2' branch on one of your previous OBJECTIVE-C projects to submit your assignment from.
+* create a `week-9-lab-2` branch on one of your previous OBJECTIVE-C projects to submit your assignment from.
     * on this branch, implement 5 of your own custom errors with your own error domain.
     * demonstrate using GCD in your application anywhere we were using NSOperationQueue.
 * prepare a 3-7 minute project pitch to present your idea for project week. this should include the following:
