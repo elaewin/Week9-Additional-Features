@@ -42,6 +42,9 @@
                                             <constraint firstAttribute="width" constant="85" id="b48-f4-YGl"/>
                                         </constraints>
                                         <state key="normal" title="Burger" image="burger"/>
+                                        <connections>
+                                            <action selector="burgerButtonPressed:" destination="UsD-QW-5dP" eventType="touchUpInside" id="7if-dn-EEq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTW-kL-8Jq">
                                         <rect key="frame" x="0.0" y="101" width="85" height="85"/>
@@ -106,6 +109,14 @@
                             <constraint firstItem="OxS-KO-fT7" firstAttribute="top" secondItem="82H-zf-Ydc" secondAttribute="bottom" constant="20" id="bdp-Fq-eRb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="burgerButton" destination="zOi-GE-h76" id="J68-Fa-vu5"/>
+                        <outletCollection property="stackViews" destination="fTW-kL-8Jq" id="tqy-XI-pai"/>
+                        <outletCollection property="stackViews" destination="MeU-x3-Bod" id="vP9-gX-WIo"/>
+                        <outletCollection property="stackViews" destination="0ih-cP-WYF" id="7cw-Fk-vHP"/>
+                        <outletCollection property="stackViews" destination="20y-do-7HA" id="3f0-QG-oqj"/>
+                        <outletCollection property="stackViews" destination="Xoy-tE-1rp" id="Wn2-iJ-YF0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hl3-AB-4HU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
