@@ -1,5 +1,5 @@
 #Week 10: Project Ideas  
-![](http://imgur.com/USkfwuf)
+![](https://imgur.com/b1Ud7hl)
 
 ##uWx Weather Application  
 > Weather application to send weather data to UW. Design similar to their Andriod Application.
