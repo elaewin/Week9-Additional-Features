@@ -11,4 +11,4 @@
 * [Reading Assignments](../../Resources/ra-grading-standard/)
 * [Grading Rubrics](../../Resources/)
 * [Lecture Resources](lecture/)
-* [Lecture Slides](https://www.icloud.com/keynote/000P80wi4TokLVnhVdqmMY2LA#Week9-Class3)
+* [Lecture Slides](https://www.icloud.com/keynote/0jPgG_s2-O8bwwY-QSbWcmvCA#Bridging_Headers)
