@@ -1,5 +1,5 @@
 #Week 10: Project Ideas  
-![shia leMagic](http://s676.photobucket.com/user/plumkat/media/Funny/magic.gif.html][IMG]http://i676.photobucket.com/albums/vv126/plumkat/Funny/magic.gif[/IMG][/URL])
+![shia leMagic](http://i.imgur.com/iZcUNxH.gifv)
 
 ##uWx Weather Application  
 > Weather application to send weather data to UW. Design similar to their Andriod Application.
