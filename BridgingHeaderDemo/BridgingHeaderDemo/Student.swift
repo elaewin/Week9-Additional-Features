@@ -22,7 +22,7 @@ class Student: Person {
     }
     
     func chewGum() {
-        print("Nom nom nom nom nom...")
+        print("Nom nom nom nom...")
     }
     
     override func talk() {
