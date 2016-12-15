@@ -2,10 +2,10 @@
 
 ![shia leMagic](https://github.com/Code-Fellows-Seattle-iOS-401d7/Week9-Additional-Features/blob/master/class-3/lecture/shia.gif)
 
-##uWx Weather Application  
+##CFuWx 
 > Weather application to send weather data to UW. Design similar to their Andriod Application.
 
-##Simon Game
+##J.O.H.N
 > Pick one of 10 Charities. Play through the `Simon`-style game. At specific checkpoints or level completions, the app will donate a specific amount to the charity of your choice. 
 
 ##Music listening party
@@ -18,10 +18,10 @@ Use MultiPeer Connectivity Framework
 ##Kiddo 2.0
 > Continue building Kiddo, using location services, testing, proper error handling, Parse-server, and analytics.  
 
-##Rae's Yoga
+##Connexion
 > Application for Yoga instructors to post videos and allow clients to practice their preferred yoga class at home.
 
-##Accessible Wiki
+##Wikable
 > Accessability Focused Wikipedia Application. Simple interface, but targetting apples accessability frameworks.
 
 ##Reciepticle
