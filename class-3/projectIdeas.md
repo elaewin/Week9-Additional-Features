@@ -1,6 +1,7 @@
 #Week 10: Project Ideas  
+<p align="center">
 ![shia leMagic](https://github.com/Code-Fellows-Seattle-iOS-401d7/Week9-Additional-Features/blob/master/class-3/lecture/shia.gif)
-
+</p>
 ##uWx Weather Application  
 > Weather application to send weather data to UW. Design similar to their Andriod Application.
 
