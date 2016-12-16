@@ -41,18 +41,38 @@ class BST<T: Comparable> {
         var description = ""
         
         if let leftTree = self.leftTree {
-            // do some stuff
+            let leftDescription = leftTree.print()
+            
+            description += "(\(leftDescription)) <- "
         }
         
+        description += "\(self.value)"
+        
         if let rightTree = self.rightTree {
-            // so some stuff
+            let rightDescription = rightTree.print()
+            
+            description += " -> (\(rightDescription))"
         }
+        
+        return description
     }
 
 
 }
 
 
+var myBinarySearchTree = BST<Int>(10)
+
+myBinarySearchTree.insert(12)
+myBinarySearchTree.insert(8)
+myBinarySearchTree.insert(5)
+myBinarySearchTree.insert(9)
+myBinarySearchTree.insert(1)
+myBinarySearchTree.insert(6)
+myBinarySearchTree.insert(11)
+myBinarySearchTree.insert(15)
+myBinarySearchTree.insert(13)
+myBinarySearchTree.print()
 
 
 
