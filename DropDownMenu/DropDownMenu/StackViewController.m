@@ -27,6 +27,8 @@ NSTimeInterval kMenuShowHideItemsDuration = 0.3;
     
     UIStackView *menuStack = [[UIStackView alloc]initWithArrangedSubviews:_stackViews];
     
+    self.burgerButton.tintColor = [UIColor whiteColor];
+    
 //    for (UIView *stackItem in _stackViews) {
 //        NSLog(@"Menu Item Present.");
 //        [stackItem setHidden:NO];
